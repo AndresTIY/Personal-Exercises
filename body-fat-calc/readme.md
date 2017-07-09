@@ -32,4 +32,7 @@ Convert your LBW to Body Fat %
 - How many inputs do we need?
   - Male, 2: Body Weight (BW), Waist Measurement (WM)
   - Female, 5: BW, WM, Hip Measurement(HM), Forearm Measurement (FM), Wrist Measurement (WrM)
-  
+
+
+### Results
+- I have 20% Body Fat :)
