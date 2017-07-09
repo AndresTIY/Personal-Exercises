@@ -6,8 +6,8 @@ I'm using [A Livestrong Article](http://www.livestrong.com/article/90931-measure
 
 #### Step 1
 Using a tape measure..
-**Male:** Measure waist at the navel
-**Female:** Measure hips and forearm at the fullest point and wrist at the thinnest
+- **Male:** Measure waist at the navel
+- **Female:** Measure hips and forearm at the fullest point and wrist at the thinnest
 
 #### Step 2
 Weight yourself in pounds with a scale. Do this when you wake up so that your weight will be at its lowest level of the day
@@ -27,3 +27,9 @@ Convert your LBW to Body Fat %
 - (Body Weight - LBW)/(Body Weight) = Number * 100 = Percentage
 - Example: (155-116)/155 = .2516 * 100 = 25.16
   - Body Fat % = 25.16%
+
+### Calculator
+- How many inputs do we need?
+  - Male, 2: Body Weight (BW), Waist Measurement (WM)
+  - Female, 5: BW, WM, Hip Measurement(HM), Forearm Measurement (FM), Wrist Measurement (WrM)
+  

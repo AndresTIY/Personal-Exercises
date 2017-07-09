@@ -1,3 +1,22 @@
 body {
   background: #F7F39A;
+  font-family: sans-serif;
+  text-align: center;
+}
+.wrapper {
+  border: 2px solid black;
+  height: 30rem;
+  margin-top: 2rem;
+  background: #346473;
+  display: block;
+}
+.inner {
+  border: 2px solid black;
+  margin: auto;
+  width: 80%;
+  height: 70%;
+  background: #A3DE83;
+  box-shadow: 10px 10px #38817A;
+  display: block;
+
 }
