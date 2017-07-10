@@ -5,11 +5,12 @@ body {
 }
 .wrapper {
   border: 2px solid black;
-  height: 30rem;
-  margin-top: 2rem;
+  /*height: 30rem;*/
   background: #346473;
   display: block;
+  padding: 1rem;
 }
+
 .inner {
   border: 2px solid black;
   margin: auto;
@@ -19,4 +20,13 @@ body {
   box-shadow: 10px 10px #38817A;
   display: block;
 
+}
+.chart-img {
+  margin-top: 1rem;
+  box-shadow: 10px 10px #38817A;
+  display: inline-block;
+
+}
+img {
+  border: 1px solid black;
 }
