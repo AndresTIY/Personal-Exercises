@@ -1,0 +1,13 @@
+Consider the following [calendar](https://www.sphere.ms/front-end-test)
+- Calendar is responsive
+- On touch devices, user can not
+  - Drag
+  - Select multiple checkboxes
+- Using the code on that page as a base, write a script that **brings a user to a menu when one of the checkboxes is tapped on a touch device**
+- When the menu is shown, user should have ability to
+  - Select a start time
+  - Select an end time
+- When user is done with the menu, the checkboxes in the calendar should be **selected based on the user's inputs**
+- User should be able to repeat process to select as many blocks of checkboxes as they want
+- Follow progressive enhancement
+- Do not break any existing functionalities
