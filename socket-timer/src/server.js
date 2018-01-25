@@ -34,8 +34,9 @@ io.on('connection', (client) => {
     }, interval);
   });
 });
+
 // Socket is being fired and started listening on it for clients
-// When a client connects, you have a closure where you can handle events from 
+// When a client connects, you have a closure where you can handle events from
 // a particular client. You also handle a specific event, `subscribeToTimer`,
 // being emitted from the client where you start a timer. When your timer fires,
 // you emit an event, `timer`, back to the client
