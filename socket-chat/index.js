@@ -1,5 +1,6 @@
 var app = require('express')();
 var http = require('http').Server(app);
+
 // Express initializes `app` to be a fn handler
 // that you can supply to an HTTP server
 
@@ -26,4 +27,41 @@ http.listen(3000, function(){
 
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
+});
+
+/* Socket.IO is composed of two parts:
+-a server that integrates w/or mounts on the node.js http server: socket.io
+-a client lib that loads on the browser side: socket.io-client
+
+during dev, socket.io servers the client automatically for us
+as we'll see, for now we only have to install one module
+"npm install --save socket.io" */
+
+var io = require('socket.io')(http);
+/* initialize a new instance of socket.io by passing the http server
+object then listen on connection event for incoming sockets and
+log it to the console */
+
+// io.on('connection', function(socket){
+//   console.log('a user connected');
+//   socket.on('disconnect', function(){
+//     console.log('user disconnected');
+//   });
+// });
+
+// io.on('connection', function(socket){
+//   socket.on('chat message', function(msg){
+//     console.log('message: ' + msg);
+//   });
+// });
+
+
+/*---------------Broadcasting----------------*/
+
+// io.emit('some event', { for: 'everyone' });
+
+io.on('connection', function(socket){
+  socket.on('chat message', function(msg){
+    io.emit('chat message', msg);
+  });
 });
