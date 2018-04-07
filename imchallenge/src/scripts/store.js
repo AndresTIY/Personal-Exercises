@@ -1,11 +1,11 @@
 import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import logger from "./middleware/logger.js";
-import thunk from "./middleware/thunk.js";
-// import reducer from './reducers/app_reducer.js'
+import logger from "./middleware/logger";
+import thunk from "./middleware/thunk";
+import reducers from "./reducers";
 
 const store = createStore(
-  reducer,
+  reducers,
   composeWithDevTools(applyMiddleware(thunk, logger))
 );
 
