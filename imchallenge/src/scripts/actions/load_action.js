@@ -14,7 +14,7 @@ export default function loadMovies() {
         "Content-Type": "application/json",
         "application-type": "REST"
       }
-    }).then(function(topics, success, xhr) {
+    }).then(function(movies, success, xhr) {
       dispatch({ type: "LOAD_MOVIES", movies: movies.data });
     });
   };
