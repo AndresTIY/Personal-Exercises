@@ -6,32 +6,44 @@ Create a webpage that manages a home movie collection.
 
 ## User Stories
 
-- As a user I want to use the app in the latest version of Chrome.
+[ ] Use in latest version of Chrome
 
-- As a user I want to be able to enter new movies.
+- I assume any app will be able to run in latest version of Chrome
 
-- As a user I want to be able to search existing movies by an arbitrary field.
+Research just in case
 
-- As a user I want to be able to see a list of all my movies.
+[ ] As a user, I want to be able to enter new movies
 
-- As a user I want to be able to either DELETE a movie or UPDATE a movie.
+- Looking at creating a button that opens up a form
 
-  (You must implement at least one.)
+[ ] As a user, I want to be able to search existing movies by an arbitrary field
 
-- As a user I want to record the following info about any given movie :
-    - Genre
-    - Actors
-    - Title
-    - Year
-    - Rating
+- an input that allows user to search by any string
+
+[ ] As a user I want to be able to see a list of all my movies
+
+- A View All button that displays all movies alphabetically
+- Bonus, using lodash, could display grouped by genre, actors, title, year, rating
+
+[ ] As a user, I want to be able to either DEL or UPDATE a movie
+
+- Add endpoints
+
+[ ] As a user, I want to record the following movie info:
+
+- Genre
+- Actors
+- Title
+- Year
+- Rating
 
 ## Technical Requirements
 
-- The page MUST be a single page application (though may have multiple routes and templates).
+[ ]  The page MUST be a single page application (though may have multiple routes and templates).
 
-- You MUST use JQuery, AngularJS, or ReactJS - pick one and be prepared to defend your decision
+[X] You MUST use JQuery, AngularJS, or ReactJS - pick one and be prepared to defend your decision
 
-- You MUST use git for version control.
+[X] You MUST use git for version control.
 
 - Bonus points:
 
@@ -43,15 +55,42 @@ Create a webpage that manages a home movie collection.
 
 You MAY use other publicly available JS components (please document separately any libraries or frameworks that you choose to use other than the ones listed here).
 
-## Tips
+## MVC
 
-- We are more interested in how it works than in how it looks
-- It is more important that your code is bug free then feature rich
-- Mistakes are ok, but be prepared to explain your code and defend your decisions
+MODEL
 
-## Additional Comments
+- Genre: String
+- Actors: String
+- Title: String
+- Year: String
+- Rating: Number
+- AJAX Calls, API EndPoints
+  - POST
+  - PUT
+  - DEL
+- Request URL: https://api.backendless.com/{appId}/{restAPIid}/data/movie
+  - App ID = 50D208EC-1FD9-F348-FF81-3FC50E86B900
+  - REST API ID = 5D23E39B-B538-CC24-FF32-A4559F913A00
+- Add New Movie Button: Function
+- Search Movies Input: takes a string
+- Search Movies Button: Function
 
-- When you start the challenge, please commit a file to the git repo named "started" with the content being the current date/time.
-- Use what you believe to be best practices when developing the page. You will be judged on both the function and the form of your code.
-- When you finish, create a git bundle( git bundle create code_challenge.bdl --all).
-- Email that bundle to the person who sent you this coding challenge or host it on dropbox and email the link to download it.
+VIEW
+
+- Main Page View
+  - Add New Movie Button
+  - Movie Detail Form with Submit
+  - Search Movies Input
+  - Search Movies Button
+  - Movie List Item
+    - Title, Year, Genre, Rating, Actors
+    - Edit Button
+    - Delete Button
+
+CONTROLLER
+
+- When user clicks Add New Movie, a movie detail form is displayed
+- When user clicks Submit on form, (1) movie detail data is sent to db
+    - (2) a success message is displayed, (3) page renders with new list item
+- When user adds a string to search input, then clicks search button, only list
+  - items with matching string will be displayed
