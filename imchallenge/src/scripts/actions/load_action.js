@@ -1,4 +1,5 @@
 import api from "../api.js";
+import $ from "jquery";
 
 // export const REQUEST_FOLLOW_ITEMS = 'REQUEST_FOLLOW_ITEMS';
 
