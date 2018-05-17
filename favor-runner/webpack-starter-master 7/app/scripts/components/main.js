@@ -11,25 +11,25 @@ class Main extends React.Component {
         </div>
         <div className="promo-code">
           <p className="promo-text">
-            If this is your first time using Favor, use this code in order to
-            get your Delivery Fee waived!
+            If this is your first time using Favor, use this code to get your
+            Delivery Fee waived!
           </p>
-          <h5>EMILC8T</h5>
+          <h3>EMILC8T</h3>
           <p className="disclaimer-text">
             (It must be the only promo code being used)
           </p>
         </div>
         <div className="promo-wknd">
           <p className="promo-explained">
-            From Thursday 11am until Sunday 11:59pm, Favor is running a
-            promotion for us runners. Essentially the more runs we do, the more
-            cash bonus we get. The tiers are 15, 25, 50, and 70.
+            From Thursday till Sunday, Favor is running a promo for us runners.
+            The more runs we do, the more cash bonus we get. The tiers are 15,
+            25, 50, and 70 favors.
           </p>
           <h5>70 is my goal!</h5>
         </div>
         <div className="cust-number">
           <p className="cust-text">Right now you are: </p>
-          <h5>10</h5>
+          <h3>10</h3>
         </div>
       </main>
     );
