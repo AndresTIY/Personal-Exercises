@@ -19,6 +19,18 @@ class Main extends React.Component {
             (It must be the only promo code being used)
           </p>
         </div>
+        <div className="promo-wknd">
+          <p className="promo-explained">
+            From Thursday 11am until Sunday 11:59pm, Favor is running a
+            promotion for us runners. Essentially the more runs we do, the more
+            cash bonus we get. The tiers are 15, 25, 50, and 70.
+          </p>
+          <h5>70 is my goal!</h5>
+        </div>
+        <div className="cust-number">
+          <p className="cust-text">Right now you are: </p>
+          <h5>10</h5>
+        </div>
       </main>
     );
   }

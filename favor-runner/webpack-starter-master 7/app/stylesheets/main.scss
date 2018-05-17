@@ -19,7 +19,27 @@ body {
 
 .promo-code {
   border: 5px solid $gray;
+  padding: 0.5rem;
+
   .promo-text {
+    font-size: 1.5rem;
+  }
+}
+
+.promo-wknd {
+  border: 5px solid $gray;
+  background: $lightblue;
+  color: $white;
+  padding: 0.5rem;
+  .promo-explained {
+    font-size: 1rem;
+  }
+}
+
+.cust-number {
+  border: 5px solid $gray;
+  padding: 0.5rem;
+  .cust-text {
     font-size: 1.5rem;
   }
 }
