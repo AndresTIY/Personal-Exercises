@@ -1,7 +1,14 @@
 import React from "react";
 import dres_icon from "../../images/dres_icon.png";
+import loadRuns from "../actions/load_runs.js";
+import { connect } from "react-redux";
+import container from "../containers/all.js";
 
 class Main extends React.Component {
+  componentDidMount() {
+    this.props.dispatch(loadRuns());
+  }
+
   render() {
     return (
       <main>
@@ -36,4 +43,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main;
+export default connect(container.allState)(Main);
