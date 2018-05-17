@@ -10,6 +10,8 @@ class Main extends React.Component {
   }
 
   render() {
+    const runs = this.props.runs;
+
     return (
       <main>
         <div className="intro">
@@ -36,7 +38,7 @@ class Main extends React.Component {
         </div>
         <div className="cust-number">
           <p className="cust-text">Right now you are: </p>
-          <h3>10</h3>
+          <h3>{runs}</h3>
         </div>
       </main>
     );
