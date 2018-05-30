@@ -1,13 +1,13 @@
 import Header from "./Header";
-// import AlbumArt from "./AlbumArt";
+import AlbumArt from "./AlbumArt";
 // import PlayBackControls from './PlayBackControls';
 // import SeekBar from './SeekBar';
-// import TrackDetails from "./TrackDetails";
+import TrackDetails from "./TrackDetails";
 
 export {
-  Header
-  // AlbumArt,
+  Header,
+  AlbumArt,
   // PlayBackControls,
   // Seekbar,
-  // TrackDetails,
+  TrackDetails
 };
