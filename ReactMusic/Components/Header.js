@@ -3,15 +3,21 @@ import { Image, TouchableOpacity, View, Text } from "react-native";
 import styles from "./styles";
 
 const Header = ({ message, onDownPress, onQueuePress, onMessagePress }) => (
-  <View style={styles.container}>
+  <View style={styles.header_container}>
     <TouchableOpacity onPress={onDownPress}>
-      <Image style={styles.button} source={require("../img/arrow_down.png")} />
+      <Image
+        style={styles.header_button}
+        source={require("../img/arrow_down.png")}
+      />
     </TouchableOpacity>
-    <Text style={styles.message} onPress={onMessagePress}>
+    <Text style={styles.header_message} onPress={onMessagePress}>
       {message.toUpperCase()}
     </Text>
     <TouchableOpacity onPress={onQueuePress}>
-      <Image style={styles.button} source={require("../img/queue_music.png")} />
+      <Image
+        style={styles.header_button}
+        source={require("../img/queue_music.png")}
+      />
     </TouchableOpacity>
   </View>
 );
