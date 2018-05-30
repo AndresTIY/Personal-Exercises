@@ -34,3 +34,5 @@ const TrackDetails = ({
     </TouchableOpacity>
   </View>
 );
+
+export default TrackDetails;
