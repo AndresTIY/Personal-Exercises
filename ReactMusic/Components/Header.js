@@ -1,4 +1,5 @@
 import { Image, TouchableOpacity, View, Text } from "react-native";
+import styles from "styles";
 
 const Header = ({ message, onDownPress, onQueuePress, onMessagePress }) => (
   <View style={styles.container}>
