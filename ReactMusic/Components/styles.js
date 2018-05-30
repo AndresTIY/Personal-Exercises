@@ -87,6 +87,28 @@ const styles = {
   slider_track: {
     height: 2,
     borderRadius: 1
+  },
+  controls_container: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingTop: 8
+  },
+  controls_secondaryControl: {
+    height: 18,
+    width: 18
+  },
+  controls_playButton: {
+    height: 72,
+    width: 72,
+    borderWidth: 1,
+    borderColor: "white",
+    borderRadius: 72 / 2,
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  controls_off: {
+    opacity: 0.3
   }
 };
 
