@@ -1,5 +1,6 @@
-import Slider from "react-native-slider";
+import React from "react";
 import { Image, TouchableOpacity, View, Text } from "react-native";
+import Slider from "react-native-slider";
 import styles from "./styles";
 
 function pad(n, width, z = 0) {
@@ -20,9 +21,7 @@ const SeekBar = ({ trackLength, currentPosition, onSeek, onSlidingStart }) => {
       <View style={{ flexDirection: "row" }}>
         <Text style={styles.slider_text}>{elapsed[0] + ":" + elapsed[1]}</Text>
         <View style={{ flex: 1 }} />
-        <Text>
-          {" "}
-          style={[styles.slider_container, { width: 40 }]}
+        <Text style={[styles.slider_text, { width: 40 }]}>
           {trackLength > 1 && "-" + remaining[0] + ":" + remaining[1]}
         </Text>
       </View>

@@ -1,3 +1,4 @@
+import React from "react";
 import { Image, TouchableOpacity, View, Text } from "react-native";
 import styles from "./styles";
 
@@ -10,7 +11,7 @@ const TrackDetails = ({
   onArtistPress
 }) => (
   <View style={styles.track_container}>
-    <TouchableOpacity onPress={onPress}>
+    <TouchableOpacity onPress={onAddPress}>
       <Image
         style={styles.track_button}
         source={require("../img/add_circle.png")}

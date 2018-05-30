@@ -1,3 +1,4 @@
+import React from "react";
 import { Image, TouchableOpacity, View, Text } from "react-native";
 import styles from "./styles";
 
@@ -53,3 +54,5 @@ const PlayBackControls = ({
     </TouchableOpacity>
   </View>
 );
+
+export default PlayBackControls;
