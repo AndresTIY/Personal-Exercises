@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
+import { Header } from "./Components";
+// import Header from "./Components/Header";
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={{ color: "white" }}>Heres some text</Text>
+        <Header message="Playing from Charts" />
       </View>
     );
   }
