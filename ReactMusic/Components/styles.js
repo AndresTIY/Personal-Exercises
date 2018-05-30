@@ -65,6 +65,28 @@ const styles = {
   album_image: {
     width: imageSize,
     height: imageSize
+  },
+  slider_container: {
+    paddingHorizontal: 16,
+    paddingTop: 16
+  },
+  slider_slider: {
+    marginTop: -12
+  },
+  slider_text: {
+    color: "rgba(255, 255, 255, 0.72)",
+    fontSize: 12,
+    textAlign: "center"
+  },
+  slider_thumb: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: "white"
+  },
+  slider_track: {
+    height: 2,
+    borderRadius: 1
   }
 };
 
