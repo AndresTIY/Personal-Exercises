@@ -1,0 +1,3 @@
+[submodule "hugo/quickstart/prologue"]
+	path = hugo/quickstart/prologue
+	url = https://github.com/sethmacleod/prologue.git
