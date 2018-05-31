@@ -25,10 +25,14 @@ const PlayBackControls = ({
       />
     </TouchableOpacity>
     <View style={{ width: 40 }} />
+    <TouchableOpacity onPress={onBack}>
+      <Image source={require("../img/previous.png")} />
+    </TouchableOpacity>
+    <View style={{ width: 20 }} />
     {!paused ? (
       <TouchableOpacity onPress={onPressPause}>
         <View style={styles.controls_playButton}>
-          <Image source={require("../img/pause.png")} />
+          <Image source={require("../img/play.png")} />
         </View>
       </TouchableOpacity>
     ) : (
